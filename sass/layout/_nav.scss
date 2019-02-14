@@ -1,0 +1,25 @@
+.nav {
+  font-size: 2rem;
+  background: white;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 3rem;
+  border-radius: 1rem;
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  li {
+    padding: 1.6rem;
+  }
+
+  a {
+    color: $clr-dark-grey;
+    &:hover {
+      color: $clr-primary;
+    }
+  }
+}

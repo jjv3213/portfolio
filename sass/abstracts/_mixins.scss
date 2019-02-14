@@ -1,0 +1,3 @@
+@mixin underline($color: $clr-primary, $style: solid, $size: 0.6rem) {
+  border-bottom: $size $style $color;
+}

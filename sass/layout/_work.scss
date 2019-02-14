@@ -1,0 +1,42 @@
+.section--work {
+  &__post {
+    color: $clr-dark-grey;
+    display: flex;
+    background: red;
+    margin-bottom: 5rem;
+  }
+
+  &__image {
+    flex: 1.5;
+    background: green;
+  }
+
+  &__info {
+    flex: 1;
+    padding: 4rem;
+    font-size: 1.6rem;
+  }
+
+  .info {
+    &-skills {
+      text-transform: uppercase;
+      padding-bottom: 2rem;
+    }
+
+    &-title {
+      font-size: 4rem;
+      text-transform: uppercase;
+      padding-bottom: 2rem;
+      font-weight: normal;
+    }
+
+    &-description {
+      padding-bottom: 2rem;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-around;
+  }
+}
