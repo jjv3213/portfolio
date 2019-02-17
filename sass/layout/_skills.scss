@@ -1,0 +1,47 @@
+.section--skills {
+  &__skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 2rem;
+    max-width: 750px;
+    margin: 0 auto;
+  }
+
+  &__skill {
+    text-align: center;
+    padding: 2rem;
+    background: $clr-primary;
+    border-radius: 2rem;
+    position: relative;
+    cursor: pointer;
+
+    &:hover .overlay {
+      width: 100%;
+    }
+  }
+
+  svg {
+    font-size: 6.5rem;
+  }
+
+  .overlay {
+    position: absolute;
+    transition: all 0.3s ease-in;
+    background: rgba($clr-dark-grey, 0.75);
+    height: 100%;
+    width: 0px;
+    top: 0;
+    left: 0;
+    border-radius: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.3s ease;
+  }
+
+  .skill-name {
+    font-size: 2rem;
+    color: white;
+  }
+}
