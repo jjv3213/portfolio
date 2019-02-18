@@ -6,6 +6,7 @@
   left: 0;
   top: 3rem;
   border-radius: 1rem;
+  z-index: 1000;
 
   ul {
     display: flex;
@@ -18,8 +19,11 @@
 
   a {
     color: $clr-dark-grey;
+    padding: 1.5rem;
+    border-radius: 2rem;
     &:hover {
-      color: $clr-primary;
+      background: $clr-primary;
+      color: white;
     }
   }
 }
