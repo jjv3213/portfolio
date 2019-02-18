@@ -1,0 +1,33 @@
+.section--contact {
+  color: $clr-dark-grey;
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem;
+    border: 4px $clr-primary solid;
+    border-radius: 2rem;
+  }
+
+  &__heading {
+    font-size: 3rem;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+
+  .link-email {
+    font-size: 2rem;
+  }
+
+  a {
+    color: $clr-dark-grey;
+    &:hover {
+      color: $clr-primary;
+    }
+  }
+
+  svg {
+    font-size: 4rem;
+  }
+}
