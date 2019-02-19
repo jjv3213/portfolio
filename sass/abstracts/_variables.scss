@@ -1,9 +1,15 @@
 // COLORS
 $clr-primary: #225470;
 $clr-dark-grey: #212121;
-$clr-light-grey: #9d9d9d;
+$clr-light-grey: #f0f0f0;
 
 // TYPOGRAPHY
 $ff: monospace, sans-serif;
 
 // GENERAL
+$breakpoints: (
+  1: 1100px,
+  2: 900px,
+  3: 800px,
+  4: 750px
+);

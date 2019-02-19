@@ -1,20 +1,33 @@
 .section--work {
   &__post {
     color: $clr-dark-grey;
-    display: flex;
-    background: $clr-primary;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    background: white;
+    padding: 0 2rem;
     border-radius: 2rem;
-    margin-bottom: 5rem; //except last one, so fix this!!
+    &:not(:last-child) {
+      margin-bottom: 5rem;
+    }
+
+    @include mq(2) {
+      padding: 0;
+      grid-template-columns: 1fr;
+    }
   }
 
   &__image {
-    flex: 1.5;
-    background: yellow;
     border-radius: 2rem;
+    justify-self: center;
+
+    @include mq(2) {
+      margin: 1rem;
+    }
   }
 
   &__info {
-    flex: 1;
     padding: 4rem;
     font-size: 1.6rem;
   }
@@ -41,12 +54,20 @@
   &__buttons {
     display: flex;
     justify-content: space-around;
+    @include mq(2) {
+      justify-content: left;
+    }
 
     a {
-      color: $clr-dark-grey;
-
+      color: white;
+      padding: 1.5rem;
+      background: $clr-primary;
       &:hover {
-        color: $clr-primary;
+        background: rgba($clr-primary, 0.9);
+      }
+
+      @include mq(2) {
+        margin-right: 2rem;
       }
     }
   }

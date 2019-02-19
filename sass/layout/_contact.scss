@@ -8,6 +8,10 @@
     padding: 2.5rem;
     border: 4px $clr-primary solid;
     border-radius: 2rem;
+
+    @include mq(3) {
+      flex-direction: column;
+    }
   }
 
   &__heading {
@@ -18,6 +22,10 @@
 
   .link-email {
     font-size: 2rem;
+
+    @include mq(3) {
+      margin: 2rem 0;
+    }
   }
 
   a {

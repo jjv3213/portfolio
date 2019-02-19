@@ -1,3 +1,10 @@
 @mixin underline($color: $clr-primary, $style: solid, $size: 0.6rem) {
   border-bottom: $size $style $color;
 }
+
+@mixin mq($size) {
+  $value: map-get($breakpoints, $size);
+  @media only screen and (max-width: $value) {
+    @content;
+  }
+}

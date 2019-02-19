@@ -30,14 +30,22 @@
 
   &__text {
     text-align: center;
-    color: $clr-dark-grey;
+    color: white;
     z-index: 2;
+
+    @include mq(4) {
+      width: 250px;
+    }
   }
 
   &__title {
     font-size: 4rem;
     letter-spacing: 0.5rem;
-    font-weight: bold;
+    font-weight: normal;
+
+    @include mq(4) {
+      font-size: 4.5rem;
+    }
   }
 
   &__subtitle {
@@ -46,11 +54,15 @@
     letter-spacing: 0.5rem;
     text-transform: uppercase;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: 0.2rem solid $clr-dark-grey; /* The typwriter cursor */
+    border-right: 0.2rem solid white; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
 
     animation: typing 3.5s steps(40), blink-caret 0.5s infinite;
+
+    @include mq(4) {
+      font-size: 1.2rem;
+    }
   }
 }
 
@@ -71,6 +83,6 @@
     border-color: transparent;
   }
   50% {
-    border-color: $clr-dark-grey;
+    border-color: white;
   }
 }
