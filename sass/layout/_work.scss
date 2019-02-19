@@ -24,6 +24,7 @@
 
     @include mq(2) {
       margin: 1rem;
+      order: -1;
     }
   }
 
